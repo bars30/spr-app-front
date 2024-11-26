@@ -39,8 +39,8 @@
             <input type="email" id="loginEmail" placeholder="Email" required>
           </label>
           <label> Your password <br>
-            <input type="password" id="loginPassword" placeholder="Password" required>
-            <small id="passwordError" style="color: red; display: none;">Password must be at least 6 characters long.</small>
+            <input type="password" id="loginPassword" placeholder="Password" required  minlength="4">
+            <small id="passwordError" style="color: red; display: none;">Password must be at least 4 characters long.</small>
             <small id="passwordErrorMax" style="color: red; display: none;">Password must be no more than 20 characters long</small>
           </label>
           <button id="loginBtn">Login</button>
