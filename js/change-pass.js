@@ -1,14 +1,13 @@
 import { url } from "./config.js";
 
+
 window.onload = function() {
- const token = localStorage.getItem('token'); 
- const inputs = document.querySelectorAll('.cell'); 
- const changePassBtn = document.querySelector('.changePassBtn'); 
- if (!token) {
-  window.location.href = './index.html'; 
-}else {
- }
+    const token = localStorage.getItem('token');
+  if (token) {
+      window.location.href = './index.html';
+    }
 };
+
 async function changePass() {
  console.log('PATCH request received');
  const token = localStorage.getItem('token');

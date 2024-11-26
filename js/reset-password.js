@@ -1,11 +1,8 @@
 window.onload = function() {
-      const token = localStorage.getItem('token');
-    
-      if (!token) {
-        return;
-      } else {
-        window.location.href = './index.html';
-      }
+    const token = localStorage.getItem('token');
+  if (token) {
+      window.location.href = './index.html';
+    }
 };
 
 import { url } from "./config.js";
