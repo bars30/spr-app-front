@@ -1,3 +1,13 @@
+window.onload = function() {
+      const token = localStorage.getItem('token');
+    
+      if (!token) {
+        return;
+      } else {
+        window.location.href = './index.html';
+      }
+};
+
 import { url } from "./config.js";
 
 const urlParams = new URLSearchParams(window.location.search);
@@ -10,7 +20,7 @@ document.getElementById('resetPassForm').addEventListener('submit', async (event
 
     if (!code || !newPassword) {
         alert('Please fill in all fields.');
-        return;
+        return; 
     }
 
     try {

@@ -4,13 +4,24 @@
     overflow-x: scroll;
   }
 }
+@media only screen and (max-width: 1050px){
+  .row {
+    grid-template-columns: 30px 100px 200px 125px repeat(2, minmax(100px, 1fr));
+  }
+}
+@media only screen and (max-width: 810px){
+  .row {
+    grid-template-columns: 30px 100px 200px 125px 180px 180px;
+  }
+}
+
 @media only screen and (max-width: 500px){
   h3.email {
     font-size: 14px;
   }
   .cell-cont button {
     font-size: 11px;
-    padding: 5px 21px;
+    padding: 5px 21px; 
   }
   .rate-input-container {
     font-size: 15px;

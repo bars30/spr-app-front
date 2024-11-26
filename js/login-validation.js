@@ -20,7 +20,7 @@ const loginBtn = document.getElementById('loginBtn');
 loginPassword.addEventListener('input', function() {
  const passwordValue = loginPassword.value;
 
- if (passwordValue.length < 6  ) {
+ if (passwordValue.length < 4  ) {
   passwordError.style.display = 'block'; 
   loginBtn.disabled = true;
  } else {

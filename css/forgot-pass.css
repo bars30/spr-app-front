@@ -20,7 +20,7 @@ input {
 .forgot-pass, .reset-pass {
  display: flex;
  align-items: center;
- height: 100vh;
+ height: 50vh;
 }
 @media only screen and (max-width: 768px){
  h1 {
