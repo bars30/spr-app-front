@@ -13,7 +13,7 @@ window.onload = function() {
   const passwordErrorMax = document.getElementById('passwordErrorMax');
 
   loginPassword.addEventListener('input', () => {
-    if (loginPassword.value.length < 6) {
+    if (loginPassword.value.length < 4) {
       passwordError.style.display = 'inline';
       loginBtn.disabled = true;
     } else if (loginPassword.value.length > 20) {
@@ -29,7 +29,7 @@ window.onload = function() {
   loginForm?.addEventListener("submit", async (event) => {
     event.preventDefault();
 
-    if (loginPassword.value.length < 6 || loginPassword.value.length > 20) return;
+    if (loginPassword.value.length < 4 || loginPassword.value.length > 20) return;
 
     await login();
   });
